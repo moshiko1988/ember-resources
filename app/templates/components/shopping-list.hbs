@@ -7,9 +7,9 @@
       delete='deleteItem'
     }}
   {{/each}}
-  <form {{action "createItem" on="submit"}}>
-
-    <input value={{newItem.content}}>
-    <button type="submit" value="submit" name="button">submit</button>
+  <form class="form-group" {{action 'createItem' on='submit'}}>
+    {{input placeholder="New-item"
+            class="input-group input-control"
+            value=newItem.content }}
   </form>
 </ul>
