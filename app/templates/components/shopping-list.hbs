@@ -4,6 +4,12 @@
     {{shopping-list/item
       item=item
       toggleDone='toggleItemDone'
+      delete='deleteItem'
     }}
   {{/each}}
+  <form {{action "createItem" on="submit"}}>
+
+    <input value={{newItem.content}}>
+    <button type="submit" value="submit" name="button">submit</button>
+  </form>
 </ul>

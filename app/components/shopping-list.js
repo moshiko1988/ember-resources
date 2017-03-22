@@ -9,8 +9,15 @@ export default Ember.Component.extend({
       return this.toggleProperty('listDetailHidden');
     },
     toggleItemDone (item){
-      console.log('WHAT THE HELL?');
+
       return this.sendAction('toggleItemDone', item);
-    }
+    },
+    deleteItem (item){
+
+     return this.sendAction('deleteItem', item);
+    },
+    createItem (item){
+      return this.sendAction('newItem', item);
   },
+  }
 });
