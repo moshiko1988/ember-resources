@@ -10,6 +10,9 @@ export default Ember.Route.extend({
     createList (list) {
       list.save()
       .then(() => this.transitionTo('lists'));
-    }
+    },
+    cancel () {
+      history.back();
+    },
   }
 });
