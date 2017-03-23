@@ -1,0 +1,11 @@
+{{#link-to 'index'}}Back{{/link-to}}
+{{#each model as |list|}}
+  {{shopping-list/card
+     list=list
+     edit='editList'
+   }}
+{{/each}}
+<br>
+{{#link-to 'lists.new'}}
+<button class='btn btn-info btn-xs'>New List</button>
+{{/link-to}}
