@@ -9,7 +9,7 @@ export default Ember.Route.extend({
   actions: {
     createList (list) {
       list.save()
-      .then(() => this.trasitionTo('lists'));
+      .then(() => this.transitionTo('lists'));
     }
   }
 });

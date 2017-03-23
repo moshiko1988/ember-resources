@@ -3,9 +3,10 @@
   {{shopping-list/card
      list=list
      edit='editList'
+     delete='deleteList'
    }}
 {{/each}}
 <br>
-{{#link-to 'lists.new'}}
-<button class='btn btn-info btn-xs'>New List</button>
+{{#link-to 'lists.new' class='btn btn-info btn-xs'}}
+New List
 {{/link-to}}
